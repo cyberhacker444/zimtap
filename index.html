@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zim Tap</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-box">
+      <h1>Zim Tap</h1>
+      <p>Preparing secure connection...</p>
+
+      <button id="continueBtn">Continue</button>
+    </div>
+  </div>
+
+  <!-- Wrapper -->
+  <div id="appWrapper">
+
+    <iframe
+      src="https://idx-secure-link.base44.app"
+      id="siteFrame"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <!-- Permanent Bottom Bar -->
+    <div class="bottom-cover"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
