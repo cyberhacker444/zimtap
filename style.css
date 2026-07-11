@@ -132,6 +132,44 @@ body {
   width: 100%;
   height: 100vh;
   border: none;
+  position: relative;
+  z-index: 10;
+}
+
+/* Neon Border Line */
+@keyframes neonBorderGlow {
+  0% {
+    border-color: #00ff00;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  25% {
+    border-color: #00ffff;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+  50% {
+    border-color: #ff0080;
+    box-shadow: inset 0 0 10px rgba(255, 0, 128, 0.6), 0 0 20px rgba(255, 0, 128, 0.8);
+  }
+  75% {
+    border-color: #1a1aff;
+    box-shadow: inset 0 0 10px rgba(26, 26, 255, 0.6), 0 0 20px rgba(26, 26, 255, 0.8);
+  }
+  100% {
+    border-color: #00ff00;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+}
+
+.neon-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 56px);
+  border: 2px solid #00ff00;
+  pointer-events: none;
+  z-index: 100;
+  animation: neonBorderGlow 4s infinite;
 }
 
 @keyframes neonGlow {
@@ -166,4 +204,5 @@ body {
   background: #00ff00;
   z-index: 99999;
   animation: neonGlow 4s infinite;
+  border: 2px solid;
 }
