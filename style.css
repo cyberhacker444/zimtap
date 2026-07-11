@@ -70,13 +70,36 @@ body {
   border: none;
 }
 
+@keyframes neonGlow {
+  0% {
+    background: #00ff00;
+    box-shadow: 0 -3px 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  25% {
+    background: #00ffff;
+    box-shadow: 0 -3px 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+  50% {
+    background: #ff0080;
+    box-shadow: 0 -3px 10px rgba(255, 0, 128, 0.5), 0 0 20px rgba(255, 0, 128, 0.8);
+  }
+  75% {
+    background: #1a1aff;
+    box-shadow: 0 -3px 10px rgba(26, 26, 255, 0.5), 0 0 20px rgba(26, 26, 255, 0.8);
+  }
+  100% {
+    background: #00ff00;
+    box-shadow: 0 -3px 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+}
+
 .bottom-cover {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 56px;
-  background: #dc143c;
+  background: #00ff00;
   z-index: 99999;
-  box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+  animation: neonGlow 4s infinite;
 }
