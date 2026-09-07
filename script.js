@@ -35,7 +35,7 @@ function preloadFrame() {
   const link = document.createElement("link");
   link.rel = "preload";
   link.as = "iframe";
-  link.href = "https://aviatorpredictorbot.base44.app";
+  link.href = "https://whats-growth-hub.base44.app";
   document.head.appendChild(link);
 
   // Start simulating progress
